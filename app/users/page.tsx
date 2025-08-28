@@ -1,5 +1,4 @@
 import React from 'react'
-
 interface User {
     id: number;
     name: string;
@@ -8,8 +7,7 @@ interface User {
 const UsersPage = async () => {
    const res = await fetch('https://jsonplaceholder.typicode.com/users');
    const users: User[] = await res.json();
-
-
+   
   return (
     <div>
         <h1>Users</h1>
